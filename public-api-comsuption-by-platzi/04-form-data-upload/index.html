@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Gatitos Aleatorios</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>Kitty App</h1>
+
+        <span id="error"></span>
+
+        <section class="randomMichis">
+            <h2>Random Kitties</h2>            
+            <article>
+                <img id="gatito1" alt="Foto gatito aleatorio">
+                <button id="saveFavoriteBtn1">Save to Favorites</button>
+            </article>
+
+             <article>
+                <img id="gatito2" alt="Foto gatito aleatorio">
+                <button id="saveFavoriteBtn2">Save to Favorites</button>
+            </article>
+
+            <button id="reloadBtn">Reload</button>
+        </section>
+        <section>
+        <h2>Upload Your Michi's picture</h2>
+        <form action="" id="uploadingForm">
+            <input id="file" type="file" name="file" />
+            <button type="button" onclick="uploadMichiPhoto()">Submit</button>
+        </form>
+       </section>
+       <section id="favoriteMichis">
+        <h2>Favorite Kitties</h2>
+        <!-- <article>
+                <img id="gatito3" alt="Foto gatito aleatorio">
+                <button id="removeBtn">Remove from Favorites</button>
+            </article>        -->
+       </section>
+    </body>
+    <script src="./main.js"></script>
+</html>
